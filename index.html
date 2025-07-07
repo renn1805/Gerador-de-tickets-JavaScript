@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Conference ticket generator</title>
+
+  <link rel="stylesheet" href="styles/fonts.css">
+  <link rel="stylesheet" href="styles/resets.css">
+  <link rel="stylesheet" href="styles/main.css">
+
+</head>
+
+<body>
+  <img src="assets/images/pattern-squiggly-line-top.svg" class="fitaDeCima">
+  <img src="assets/images/pattern-squiggly-line-bottom-desktop.svg" class="fitaDeBaixo">
+
+  <header>
+
+    <div class="conteiner-logo-full">
+      <img src="assets/images/logo-full.svg" alt="logo" id="logo-full">
+    </div>
+
+    <section class="conteiner-titulo-descricao">
+      <div class="titulo">
+        <h1>Your Journey to Coding Conf 2025 Starts Here!</h1>
+      </div>
+      <p>Secure your spot at next year's biggest coding conference.</p>
+    </section>
+
+    <section class="conteiner-upload-img">
+      <div class="upload-box">
+        <h4>Upload Avatar</h4>
+        <input type="file" class="upload-img">
+        <span>Drag and drop or click to upload</span>
+
+        <div class="descripition-upload-img">
+          <span>
+            Upload your photo (JPG or PNG, max size: 500KB).
+          </span>
+        </div>
+    </section>
+
+    <div class="conteiner-input-name">
+      <h4>Full Name</h4>
+      <input type="text">
+    </div>
+    <section class="conteiner-input-email">
+      <h4>Email Address</h4>
+      <input type="email" placeholder="example@email.com">
+    </section>
+    <section class="conteiner-input-gitname">
+      <h4>GitHub Username</h4>
+      <input type="text" placeholder="@yourusername">
+    </section>
+
+    <button class="generate-ticket">Generate My Ticket</button>
+
+    <!-- Congrats, "full name" Your ticket is ready.
+    We've emailed your ticket to "Email Address" and will send updates in the run up to the event.
+    Coding Conf
+    Jan 31, 2025 / Austin, TX -->
+    <!-- Generated tickets ends -->
+
+  </header>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+img.fitaDeBaixo {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    z-index: 1;
+}
+
+img.fitaDeCima {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    z-index: 1;
+}
+
+
+/*? header */
+header {
+    position: relative;
+    z-index: 40;
+}
+
+div.conteiner-logo-full {
+    /* border: 1px solid tomato; */
+    display: flex;
+    justify-content: center;
+    margin-block: 20px 40px;
+}
+
+div.conteiner-logo-full img {
+    height: 25px;
+}
+
+header div.conteiner-titulo-descricao {
+    border: 1px solid tomato;
+    text-align: center;
+}
+
+header h1.titulo {
+    max-width: 500px;
+}
