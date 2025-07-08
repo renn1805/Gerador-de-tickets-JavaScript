@@ -15,6 +15,8 @@ img.fitaDeCima {
 
 
 /*? header */
+
+/* ? tipulo até o upload */
 header {
     position: relative;
     z-index: 40;
@@ -28,14 +30,78 @@ div.conteiner-logo-full {
 }
 
 div.conteiner-logo-full img {
-    height: 25px;
+    height: 20px;
 }
 
-header div.conteiner-titulo-descricao {
-    border: 1px solid tomato;
+header section.conteiner-titulo-descricao {
+    /* border: 1px solid tomato; */
     text-align: center;
+    margin-bottom: 25px;
 }
 
-header h1.titulo {
-    max-width: 500px;
+header section.conteiner-titulo-descricao p,
+.drag-and-drop,
+.upload-info {
+    color: hsl(245, 15%, 58%);
+    font-size: 110%;
 }
+
+header div.titulo h1 {
+    margin: 0 auto 10px;
+    max-width: 450px;
+    font-size: 250%;
+}
+
+section.conteiner-upload-img div.area-upload {
+    width: 400px;
+    margin-inline: auto;
+}
+
+h4 {
+    font-weight: 200;
+    margin-bottom: 8px;
+    font-size: 120%;
+}
+
+section.conteiner-upload-img div.upload-box {
+    border-radius: 10px;
+    border: 1px dashed hsl(245, 15%, 58%);
+    width: 100%;
+    min-height: 90px;
+    background-color: #cccccc1c;
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section.conteiner-upload-img div.upload-box div.div-img-upload {
+    /* border: 1px solid tomato; */
+    width: 55px;
+    height: 55px;
+    backdrop-filter: blur(5px);
+    border-radius: 8px;
+    padding: 6px;
+    margin-block: 15px 10px;
+}
+
+section.conteiner-upload-img div.upload-box img {
+    width: 100%;
+}
+
+section.conteiner-upload-img div.upload-box span {
+    margin-bottom: 15px;
+}
+
+.upload-info {
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.upload-info img {
+    margin: 0 5px 0 0;
+}
+
+/* ? area de cadastro */

@@ -34,29 +34,42 @@
     </section>
 
     <section class="conteiner-upload-img">
-      <div class="upload-box">
-        <h4>Upload Avatar</h4>
-        <input type="file" class="upload-img">
-        <span>Drag and drop or click to upload</span>
+      <label>
+        <input type="file" class="upload-img" accept=".jpg, .png " style="display: none;">
 
-        <div class="descripition-upload-img">
-          <span>
-            Upload your photo (JPG or PNG, max size: 500KB).
-          </span>
-        </div>
+        <div class="area-upload">
+          <h4>Upload Avatar</h4>
+
+          <div class="upload-box">
+            <div class="div-img-upload">
+              <img src="assets/images/icon-upload.svg" class="img-upload">
+            </div>
+
+            <span class="drag-and-drop">Drag and drop or click to upload</span>
+          </div>
+
+          <div class="descripition-upload-img">
+            <span class="upload-info">
+              <img src="assets/images/icon-info.svg" class="img-info">
+              Upload your photo (JPG or PNG, max size: 500KB).
+            </span>
+          </div>
+      </label>
     </section>
 
-    <div class="conteiner-input-name">
-      <h4>Full Name</h4>
-      <input type="text">
-    </div>
-    <section class="conteiner-input-email">
-      <h4>Email Address</h4>
-      <input type="email" placeholder="example@email.com">
-    </section>
-    <section class="conteiner-input-gitname">
-      <h4>GitHub Username</h4>
-      <input type="text" placeholder="@yourusername">
+    <section class="cadastro">
+      <div class="conteiner-input-name">
+        <h4>Full Name</h4>
+        <input type="text">
+      </div>
+      <div class="conteiner-input-email">
+        <h4>Email Address</h4>
+        <input type="email" placeholder="example@email.com">
+      </div>
+      <div class="conteiner-input-gitname">
+        <h4>GitHub Username</h4>
+        <input type="text" placeholder="@yourusername">
+      </div>
     </section>
 
     <button class="generate-ticket">Generate My Ticket</button>
