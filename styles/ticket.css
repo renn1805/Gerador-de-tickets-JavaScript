@@ -1,0 +1,28 @@
+/* ? parte do ticket */
+section.titulo-descricao-ticket p {
+    width: 280px;
+
+    margin-inline: auto;
+}
+
+section.titulo-descricao-ticket span.span-full-name {
+    background: linear-gradient(to right, hsl(7, 86%, 67%), hsl(0, 0%, 100%));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block
+}
+
+section.titulo-descricao-ticket span.span-email {
+    color: hsl(7, 71%, 60%);
+}
+
+section.conteiner-ticket {
+    background: url(../assets/images/pattern-ticket.svg);
+    background-size: cover;
+    width: 450px;
+    height: 210px;
+}
+
+.perfil-ticket img.avatar {
+    width: 40px;
+}

@@ -14,10 +14,11 @@ img.fitaDeCima {
 }
 
 
-/*? header */
+/*? main */
 
 /* ? tipulo até o upload */
-header {
+main {
+    display: none;
     position: relative;
     z-index: 40;
 }
@@ -26,34 +27,34 @@ div.conteiner-logo-full {
     /* border: 1px solid tomato; */
     display: flex;
     justify-content: center;
-    margin-block: 20px 40px;
+    margin-block: 20px 35px;
 }
 
 div.conteiner-logo-full img {
-    height: 20px;
+    height: 16px;
 }
 
-header section.conteiner-titulo-descricao {
+section.conteiner-titulo-descricao {
     /* border: 1px solid tomato; */
     text-align: center;
     margin-bottom: 25px;
 }
 
-header section.conteiner-titulo-descricao p,
+section.conteiner-titulo-descricao p,
 .drag-and-drop,
 .upload-info {
     color: hsl(245, 15%, 58%);
     font-size: 110%;
 }
 
-header div.titulo h1 {
+div.titulo h1 {
     margin: 0 auto 10px;
     max-width: 450px;
     font-size: 250%;
 }
 
 section.conteiner-upload-img div.area-upload {
-    width: 400px;
+    width: 300px;
     margin-inline: auto;
 }
 
@@ -74,12 +75,19 @@ section.conteiner-upload-img div.upload-box {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: .5s;
+    cursor: pointer;
+
+}
+
+section.conteiner-upload-img div.upload-box:hover {
+    background-color: #cccccc25;
 }
 
 section.conteiner-upload-img div.upload-box div.div-img-upload {
     /* border: 1px solid tomato; */
-    width: 55px;
-    height: 55px;
+    width: 40px;
+    height: 40px;
     backdrop-filter: blur(5px);
     border-radius: 8px;
     padding: 6px;
@@ -95,6 +103,7 @@ section.conteiner-upload-img div.upload-box span {
 }
 
 .upload-info {
+    font-size: 90%;
     margin-top: 8px;
     display: flex;
     align-items: center;
@@ -105,3 +114,62 @@ section.conteiner-upload-img div.upload-box span {
 }
 
 /* ? area de cadastro */
+section.cadastro {
+    /* border: 1px solid tomato; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.cadastro div.input-cadastro h4 {
+    margin-top: 12px;
+    font-weight: 400;
+}
+
+section.cadastro div.input-cadastro input {
+    width: 300px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 8px;
+    border: 2px solid hsla(246, 15%, 58%, 0.438);
+    background-color: #cccccc1c;
+    backdrop-filter: blur(5px);
+    color: white;
+    transition: .5s;
+}
+
+section.cadastro div.input-cadastro input:hover {
+    border: 2px solid hsl(7, 71%, 60%);
+
+}
+
+section.button-generate {
+    /* border: 2px solid hsl(7, 71%, 60%); */
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+}
+
+section.button-generate button.generate-ticket {
+    background: hsl(7, 88%, 67%);
+    border: none;
+    border-radius: 8px;
+
+    width: 300px;
+    height: 30px;
+    padding: 5px;
+
+    outline: none;
+    font-weight: 600;
+    font-size: 100%;
+    color: hsla(247, 69%, 10%, 0.63);
+
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+section.button-generate button.generate-ticket:hover {
+    background: hsl(7, 71%, 60%);
+}

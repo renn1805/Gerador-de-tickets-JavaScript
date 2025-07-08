@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="styles/fonts.css">
   <link rel="stylesheet" href="styles/resets.css">
   <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/ticket.css">
 
 </head>
 
@@ -20,11 +21,11 @@
   <img src="assets/images/pattern-squiggly-line-top.svg" class="fitaDeCima">
   <img src="assets/images/pattern-squiggly-line-bottom-desktop.svg" class="fitaDeBaixo">
 
-  <header>
+  <div class="conteiner-logo-full">
+    <img src="assets/images/logo-full.svg" alt="logo" id="logo-full">
+  </div>
 
-    <div class="conteiner-logo-full">
-      <img src="assets/images/logo-full.svg" alt="logo" id="logo-full">
-    </div>
+  <main>
 
     <section class="conteiner-titulo-descricao">
       <div class="titulo">
@@ -34,12 +35,12 @@
     </section>
 
     <section class="conteiner-upload-img">
-      <label>
-        <input type="file" class="upload-img" accept=".jpg, .png " style="display: none;">
 
-        <div class="area-upload">
-          <h4>Upload Avatar</h4>
+      <div class="area-upload">
+        <h4>Upload Avatar</h4>
 
+        <label>
+          <input type="file" class="upload-img" accept=".jpg, .png " style="display: none;">
           <div class="upload-box">
             <div class="div-img-upload">
               <img src="assets/images/icon-upload.svg" class="img-upload">
@@ -47,40 +48,65 @@
 
             <span class="drag-and-drop">Drag and drop or click to upload</span>
           </div>
+        </label>
 
-          <div class="descripition-upload-img">
-            <span class="upload-info">
-              <img src="assets/images/icon-info.svg" class="img-info">
-              Upload your photo (JPG or PNG, max size: 500KB).
-            </span>
-          </div>
-      </label>
+        <div class="descripition-upload-img">
+          <span class="upload-info">
+            <img src="assets/images/icon-info.svg" class="img-info">
+            Upload your photo (JPG or PNG, max size: 500KB).
+          </span>
+        </div>
     </section>
 
     <section class="cadastro">
-      <div class="conteiner-input-name">
+      <div class="conteiner-input-name input-cadastro">
         <h4>Full Name</h4>
         <input type="text">
       </div>
-      <div class="conteiner-input-email">
+      <div class="conteiner-input-email input-cadastro">
         <h4>Email Address</h4>
         <input type="email" placeholder="example@email.com">
       </div>
-      <div class="conteiner-input-gitname">
+      <div class="conteiner-input-gitname input-cadastro">
         <h4>GitHub Username</h4>
         <input type="text" placeholder="@yourusername">
       </div>
     </section>
 
-    <button class="generate-ticket">Generate My Ticket</button>
+    <section class="button-generate">
+      <button class="generate-ticket">Generate My Ticket</button>
+    </section>
 
-    <!-- Congrats, "full name" Your ticket is ready.
-    We've emailed your ticket to "Email Address" and will send updates in the run up to the event.
-    Coding Conf
-    Jan 31, 2025 / Austin, TX -->
     <!-- Generated tickets ends -->
 
-  </header>
+  </main>
+  <section class="titulo-descricao-ticket conteiner-titulo-descricao">
+    <div class="titulo">
+      <h1 class="titulo-ticket ">
+        Congrats, <span class="span-full-name">Joantan Kristof</span>! Your ticket is ready.
+      </h1>
+    </div>
+    <p>
+      We've emailed your ticket to <span class="span-email">jonatan@email.com</span> and will send updates in the run up
+      to the event.
+    </p>
+  </section>
+
+  <section class="conteiner-ticket">
+    <img src="assets/images/logo-full.svg" alt="logo" class="logo-full-ticket">
+    <span>
+      Jan 31, 2025 / Austin, TX
+    </span>
+    <div class="perfil-ticket">
+      <img src="assets/images/image-avatar.jpg" alt="avatar" class="avatar">
+      <h4 class="nome-ticket">Joantan Kristof</h4>
+      <span>
+        <img src="assets/images/icon-github.svg" alt="img-github">
+        @jonatankristof0101
+      </span>
+    </div>
+  </section>
+
 </body>
 
 </html>
