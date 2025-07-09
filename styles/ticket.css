@@ -1,4 +1,13 @@
 /* ? parte do ticket */
+section.all-ticket {
+    display: none;
+}
+
+section.titulo-descricao-ticket {
+    margin-bottom: 60px;
+
+}
+
 section.titulo-descricao-ticket p {
     width: 280px;
 
@@ -19,10 +28,86 @@ section.titulo-descricao-ticket span.span-email {
 section.conteiner-ticket {
     background: url(../assets/images/pattern-ticket.svg);
     background-size: cover;
-    width: 450px;
-    height: 210px;
+    width: 360px;
+    height: 168px;
+    padding: 16px 0 16px 16px;
+
+    display: flex;
+    justify-content: space-between;
 }
 
-.perfil-ticket img.avatar {
+section.conteiner-ticket div.conteudo-ticket {
+    /* border: 1px solid tomato; */
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+section.conteiner-ticket div.conteiner-logo-data {
+    display: flex;
+    flex-direction: column;
+
+    align-items: start;
+
+    /* border: 1px solid tomato; */
+}
+
+section.conteiner-ticket div.conteiner-logo-data span {
+    margin: 4px 0 0 35px;
+    color: hsl(245, 15%, 58%);
+    font-size: 90%;
+    font-weight: 400;
+}
+
+section.conteiner-ticket img.logo-full-ticket {
+    height: 24px;
+    text-align: left;
+}
+
+div.perfil-ticket {
+    /* border: 1px solid tomato; */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+div.perfil-ticket img.avatar {
     width: 40px;
+    border-radius: 6px;
+}
+
+div.perfil-ticket div.informacoes-avatar img {
+    height: 13px;
+
+}
+
+div.perfil-ticket div.informacoes-avatar h4 {
+    margin-bottom: 0;
+}
+
+div.perfil-ticket div.informacoes-avatar span {
+    color: hsl(245, 15%, 58%);
+    font-size: 90%;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+div.conteiner-cod-ticket {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid tomato; */
+    width: 20%;
+}
+
+div.conteiner-cod-ticket h4.cod-ticket {
+    /* border: 1px solid tomato; */
+    writing-mode: vertical-rl;
+    text-align: center;
+    color: hsl(245, 15%, 58%);
+    font-weight: 400;
+
 }
