@@ -31,6 +31,7 @@ section.conteiner-ticket {
     width: 360px;
     height: 168px;
     padding: 16px 0 16px 16px;
+    margin-inline: auto;
 
     display: flex;
     justify-content: space-between;

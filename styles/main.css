@@ -11,12 +11,12 @@ img.fitaDeCima {
     top: 50px;
     right: 0;
     z-index: 1;
+    width: 40%;
 }
 
 img.linhas {
     position: absolute;
     width: 100%;
-    height: 100vh;
     z-index: 2;
     /* border: 1px solid tomato; */
 }
@@ -61,7 +61,7 @@ div.titulo h1 {
 }
 
 section.conteiner-upload-img div.area-upload {
-    width: 300px;
+    width: 330px;
     margin-inline: auto;
 }
 
@@ -75,7 +75,7 @@ section.conteiner-upload-img div.upload-box {
     border-radius: 10px;
     border: 1px dashed hsl(245, 15%, 58%);
     width: 100%;
-    min-height: 90px;
+    min-height: 120px;
     background-color: #cccccc1c;
     backdrop-filter: blur(5px);
     display: flex;
@@ -91,7 +91,7 @@ section.conteiner-upload-img div.upload-box:hover {
     background-color: #cccccc25;
 }
 
-section.conteiner-upload-img div.upload-box div.div-img-upload {
+div.upload-box div {
     /* border: 1px solid tomato; */
     width: 40px;
     height: 40px;
@@ -99,10 +99,20 @@ section.conteiner-upload-img div.upload-box div.div-img-upload {
     border-radius: 8px;
     padding: 6px;
     margin-block: 15px 10px;
+    overflow: hidden;
 }
 
 section.conteiner-upload-img div.upload-box img {
     width: 100%;
+    height: 100%;
+}
+
+div.upload-box div.conteiner-nova-img {
+    padding: 0px;
+}
+
+img.remove {
+    display: none;
 }
 
 section.conteiner-upload-img div.upload-box span {
@@ -134,8 +144,8 @@ section.cadastro div.input-cadastro h4 {
 }
 
 section.cadastro div.input-cadastro input {
-    width: 300px;
-    height: 30px;
+    width: 330px;
+    height: 40px;
     padding: 5px;
     border-radius: 8px;
     border: 2px solid hsla(246, 15%, 58%, 0.438);
@@ -143,6 +153,10 @@ section.cadastro div.input-cadastro input {
     backdrop-filter: blur(5px);
     color: white;
     transition: .5s;
+}
+
+section.cadastro div.input-cadastro input:focus {
+    outline: 1px solid hsl(245, 19%, 35%);
 }
 
 section.cadastro div.input-cadastro input:hover {
@@ -163,8 +177,8 @@ section.button-generate button.generate-ticket {
     border: none;
     border-radius: 8px;
 
-    width: 300px;
-    height: 30px;
+    width: 330px;
+    height: 40px;
     padding: 5px;
 
     outline: none;
