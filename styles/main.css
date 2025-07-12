@@ -87,8 +87,9 @@ section.conteiner-upload-img div.upload-box {
 
 }
 
-section.conteiner-upload-img div.upload-box:hover {
-    background-color: #cccccc25;
+section.conteiner-upload-img div.upload-box:hover,
+section.cadastro div.input-cadastro input:hover {
+    background-color: #cccccc3b;
 }
 
 div.upload-box div {
@@ -121,7 +122,7 @@ img.remove {
 }
 
 section.conteiner-upload-img div.upload-box span {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .upload-info {
@@ -152,6 +153,7 @@ section.cadastro div.input-cadastro input {
     width: 330px;
     height: 40px;
     padding: 5px;
+    padding-left: 10px;
     border-radius: 8px;
     border: 2px solid hsla(246, 15%, 58%, 0.438);
     background-color: #cccccc1c;
@@ -160,14 +162,15 @@ section.cadastro div.input-cadastro input {
     transition: .5s;
 }
 
+section.cadastro div.conteiner-input-email {
+    display: flex;
+    flex-direction: column;
+}
+
 section.cadastro div.input-cadastro input:focus {
     outline: 1px solid hsl(245, 19%, 35%);
 }
 
-section.cadastro div.input-cadastro input:hover {
-    border: 2px solid hsl(7, 71%, 60%);
-
-}
 
 section.button-generate {
     /* border: 2px solid hsl(7, 71%, 60%); */
