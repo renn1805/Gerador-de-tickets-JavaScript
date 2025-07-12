@@ -100,6 +100,11 @@ div.upload-box div {
     padding: 6px;
     margin-block: 15px 10px;
     overflow: hidden;
+    transition: transform .7s ease-in-out;
+}
+
+div.upload-box div:hover {
+    transform: scale(1.4);
 }
 
 section.conteiner-upload-img div.upload-box img {
@@ -126,7 +131,7 @@ section.conteiner-upload-img div.upload-box span {
     align-items: center;
 }
 
-.upload-info img {
+.upload-info svg {
     margin: 0 5px 0 0;
 }
 
