@@ -26,7 +26,7 @@
     <img src="assets/images/logo-full.svg" alt="logo" id="logo-full">
   </div>
 
-  <main>
+  <main id="preTicket">
 
     <section class="conteiner-titulo-descricao">
       <div class="titulo">
@@ -69,45 +69,40 @@
     </section>
 
     <section class="cadastro">
-      <div class="conteiner-input-name input-cadastro">
-        <h4>Full Name</h4>
-        <input id="input-name" type="text">
-      </div>
-
-      <div class="conteiner-input-email input-cadastro">
-        <h4>Email Address</h4>
-        <input id="input-email" type="email" placeholder="example@email.com">
-
-        <span class="error-email upload-info" style="color: hsl(7, 88%, 67%); display: none;">
-
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-              d="M2 8a6 6 0 1 0 12 0A6 6 0 0 0 2 8Z" />
-            <path fill="currentColor" d="M8.004 10.462V7.596ZM8 5.57v-.042Z" />
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-              d="M8.004 10.462V7.596M8 5.569v-.042" />
-
-          </svg>
-          please, enter a valid email address
-        </span>
-
-      </div>
-
-      <div class="conteiner-input-gitname input-cadastro">
-        <h4>GitHub Username</h4>
-        <input id="input-gitname" type="text" placeholder="@yourusername">
-      </div>
+      <form action="" id="formCadastro">
+        <div class="conteiner-input-name input-cadastro">
+          <h4>Full Name</h4>
+          <input id="input-name" type="text" autocomplete="off">
+        </div>
+        <div class="conteiner-input-email input-cadastro">
+          <h4>Email Address</h4>
+          <input id="input-email" type="email" placeholder="example@email.com" autocomplete="off">
+          <span class="error-email upload-info" style="color: hsl(7, 88%, 67%); display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                d="M2 8a6 6 0 1 0 12 0A6 6 0 0 0 2 8Z" />
+              <path fill="currentColor" d="M8.004 10.462V7.596ZM8 5.57v-.042Z" />
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                d="M8.004 10.462V7.596M8 5.569v-.042" />
+            </svg>
+            please, enter a valid email address
+          </span>
+        </div>
+        <div class="conteiner-input-gitname input-cadastro">
+          <h4>GitHub Username</h4>
+          <input id="input-gitname" type="text" placeholder="@yourusername" autocomplete="off">
+        </div>
+      </form>
     </section>
 
     <section class="button-generate">
-      <button class="generate-ticket">Generate My Ticket</button>
+      <button type="submit" form="formCadastro" class="generate-ticket">Generate My Ticket</button>
     </section>
 
     <!--todo: Generated tickets ends -->
 
   </main>
-  <section class="all-ticket">
+  <section class="all-ticket" id="posTicket">
     <section class="titulo-descricao-ticket conteiner-titulo-descricao">
       <div class="titulo">
         <h1 class="titulo-ticket ">

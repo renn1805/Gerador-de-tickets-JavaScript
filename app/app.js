@@ -1,6 +1,7 @@
 const inputFile = document.querySelector("#input-file");
-
+const formCadastro = document.querySelector('#formCadastro')
 const spanUploadInfo = document.querySelector("#upload-info");
+
 
 inputFile.addEventListener("change", function (e) {
    const inputTarget = e.target;
@@ -36,8 +37,12 @@ inputFile.addEventListener("change", function (e) {
 const inputName = document.querySelector("#input-name");
 const inputEmail = document.querySelector("#input-email");
 const inputGitname = document.querySelector("#input-gitname");
+const gitname = inputGitname.value.trim();
 const botaoGenerateTicket = document.querySelector(".generate-ticket");
-botaoGenerateTicket.addEventListener("click", function () {
+
+formCadastro.addEventListener("submit", function (e) {
+
+   e.preventDefault()
    if (inputFile.value === "") {
       spanUploadInfo.style.color = "hsl(7, 88%, 67%)";
    } else {
@@ -49,6 +54,7 @@ botaoGenerateTicket.addEventListener("click", function () {
       inputEmail.value.trim() !== "" &&
       inputGitname.value.trim() !== ""
    ) {
+      genereteTicket()
    } else if (inputName.value.trim() === "") {
       // ? input name
       inputName.style.border = "2px solid hsl(7, 88%, 67%)";
@@ -69,6 +75,16 @@ botaoGenerateTicket.addEventListener("click", function () {
       //? input github
       inputGitname.style.border = "2px solid hsl(7, 88%, 67%)";
    } else {
+      alert('deu errado')
       inputGitname.style.border = "2px solid hsla(246, 15%, 58%, 0.438)";
    }
 });
+
+function genereteTicket() {
+   document.querySelector("#preTicket").style.opacity = "0"
+   setTimeout(() => {
+      document.querySelector("#preTicket").style.display = "none"
+      document.querySelector("#posTicket").style.opacity = "1"
+      document.querySelector("#posTicket").style.transform = "translateX(0)"
+   }, 1000)
+}

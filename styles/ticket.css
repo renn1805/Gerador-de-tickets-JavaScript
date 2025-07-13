@@ -1,6 +1,8 @@
 /* ? parte do ticket */
 section.all-ticket {
-    display: none;
+    opacity: 0;
+    transform: translateX(-100vb);
+    transition: 3s ease-out;
 }
 
 section.titulo-descricao-ticket {

@@ -28,6 +28,8 @@ main {
     /* display: none; */
     position: relative;
     z-index: 40;
+    opacity: 1;
+    transition: 1.5s ease-out;
 }
 
 div.conteiner-logo-full {
