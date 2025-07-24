@@ -12,12 +12,19 @@ inputFile.addEventListener("change", function (e) {
          reader.addEventListener("load", function (e) {
             const readerTarget = e.target;
             const img = document.createElement("img");
+            const imgTicket = document.createElement("img");
+
             img.src = readerTarget.result;
+            imgTicket.src = readerTarget.result;
 
             const imgConteiner = document.querySelector(".div-img-upload");
             imgConteiner.classList.add("conteiner-nova-img");
             imgConteiner.innerHTML = "";
             imgConteiner.appendChild(img);
+
+            const imgConteinerTicket = document.querySelector('.img-avatar')
+            imgConteinerTicket.appendChild(imgTicket);
+
          });
 
          reader.readAsDataURL(file);
@@ -40,6 +47,11 @@ const inputGitname = document.querySelector("#input-gitname");
 const gitname = inputGitname.value.trim();
 const botaoGenerateTicket = document.querySelector(".generate-ticket");
 
+const spanName = document.querySelector('.span-full-name')
+const spanEmail = document.querySelector('.span-email')
+const spanGit = document.querySelector('.span-git')
+const spanInformationsName = document.querySelector('.nome-ticket')
+
 formCadastro.addEventListener("submit", function (e) {
 
    e.preventDefault()
@@ -54,6 +66,11 @@ formCadastro.addEventListener("submit", function (e) {
       inputEmail.value.trim() !== "" &&
       inputGitname.value.trim() !== ""
    ) {
+      spanName.innerHTML = inputName.value.trim()
+      spanInformationsName.innerHTML = inputName.value.trim()
+      spanEmail.innerHTML = inputEmail.value.trim()
+      spanGit.innerHTML = inputGitname.value.trim()
+
       genereteTicket()
    } else if (inputName.value.trim() === "") {
       // ? input name
